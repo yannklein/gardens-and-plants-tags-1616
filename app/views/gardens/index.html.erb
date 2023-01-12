@@ -1,14 +1,35 @@
-<p style="color: green"><%= notice %></p>
+<div class="container">
+  <h1 class="m-5 text-center">My favorite gardens 🌳</h1>
+  <details class="my-5" >
+    <summary>TODO:</summary>
+    <ul>
+      <li>As a user I can see one garden's plants</li>
+      <li>As a user I can add a plant in a garden</li>
+      <li>As a user I can delete a plant</li>
+    </ul>
+  </details>
+  <div class="row">
+    <div class="col-4 mb-3">
+        <%= link_to new_garden_path do %>
+          <div class="card-new-trip">
+            <h2>+ Add a garden</h2>
+          </div>
+        <% end %>
+    </div>
 
-<h1>Gardens</h1>
-
-<div id="gardens">
-  <% @gardens.each do |garden| %>
-    <%= render garden %>
-    <p>
-      <%= link_to "Show this garden", garden %>
-    </p>
-  <% end %>
+    <% @gardens.each do |garden| %>
+      <div class="col-4 mb-3">
+        <%= link_to garden_path(garden) do %>
+          <div class="card-trip">
+            <img src="<%= garden.banner_url %>" />
+            <div class="card-trip-infos">
+              <div>
+                <h2><%= garden.name %></h2>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
 </div>
-
-<%= link_to "New garden", new_garden_path %>
