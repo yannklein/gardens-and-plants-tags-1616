@@ -19,6 +19,7 @@
                 <div class="card-trip-infos">
                   <div>
                     <h2><%= plant.name %></h2>
+                    <%= link_to "+", plant_path(plant), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "card-remove-link bg-dark" %>
                   </div>
                 </div>
               </div>
