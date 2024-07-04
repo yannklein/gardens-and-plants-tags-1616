@@ -1,6 +1,19 @@
-Solution code of the Web Development bootcamp Gardens and Plants livecode.
+# Gardens and Plants livecode.
 
-Each branch represents a snapshot of the codebase during this multi-step livecodes:
-- `day-one-exercise-one`: app creation, garden model scaffold and seed
-- `day-one-exercise-two`: plant model
-- `day-two`: tag model & JavaScript
+### Steps
+
+#### Data layer
+
+1. Generate the model ✅
+2. Migrate ✅
+3. Model validations ✅
+4. Plant seeds ✅
+
+#### Router/Controller/View
+
+5. Add plant cards in the gardens show page
+6. Create plant controller
+6.5 Build the adequate plant routes
+7. Create the new plant form in the gardens show page
+8. Build the create action in the plant controller
+9. Destroy a plant

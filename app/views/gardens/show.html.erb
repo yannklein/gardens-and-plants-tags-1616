@@ -9,9 +9,27 @@
 <div class="container">
   <div class="row">
     <div class="col-8 my-3">
-      <h2>No plants in this garden yet, add some!</h2>
+      <% if @garden.plants.any? %>
+        <div class="row">
+          <% @garden.plants.each do |plant| %>
+            <%# display plant card %>
+            <div class="col-4 mb-3">
+              <div class="card-trip">
+                <img src="<%= plant.image_url %>" />
+                <div class="card-trip-infos">
+                  <div>
+                    <h2><%= plant.name %></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% else %>
+        <h2>No plants in this garden yet, add some!</h2>
+      <% end %>
     </div>
-    <div class="col-4 my-3">
+    <div class="col-4 my-3 bg-light h-100">
     </div>
   </div>
 </div>
