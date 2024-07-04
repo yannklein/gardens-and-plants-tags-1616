@@ -11,7 +11,7 @@
 
 #### Router/Controller/View
 
-5. Add plant cards in the gardens show page
+5. Add plant cards in the gardens show page ✅
 6. Create plant controller
 6.5 Build the adequate plant routes
 7. Create the new plant form in the gardens show page

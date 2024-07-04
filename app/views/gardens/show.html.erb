@@ -29,7 +29,13 @@
         <h2>No plants in this garden yet, add some!</h2>
       <% end %>
     </div>
-    <div class="col-4 my-3 bg-light h-100">
+    <div class="col-4 my-3 bg-light h-100 p-3">
+      <%= simple_form_for [@garden, @plant] do |f| %>
+        <%= f.input :name, placeholder: "Mimosa" %>
+        <%= f.input :image_url, placeholder: "https://some_nice_image_found_on_google.jpg" %>
+        <%= f.submit "Add", class: "btn btn-primary" %>
+      <% end %>
+      
     </div>
   </div>
 </div>
