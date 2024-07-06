@@ -1,6 +1,6 @@
 if Rails.env.development?
   puts "Destroying all the gardens and tags..."
-  # Plant.destroy_all not needed becaue we have dependent destroy
+  # Plant.destroy_all not needed because we have dependent destroy
   Garden.destroy_all
 end
 
