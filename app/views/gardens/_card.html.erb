@@ -1,16 +1,17 @@
 <div class="col-6 col-md-4 mb-3">
   <div class="card-trip">
-    <img src="<%= plant.image_url %>" />
-    <div class="card-trip-infos">
-      <div>
-        <h2><%= plant.name %></h2>
-        <%= link_to "+", plant_path(plant), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "card-remove-link bg-dark" %>
-      </div>
+    <div class="card-image" style="background-image: url(<%= plant.image_url %>)">
       <div class="card-tags">
         <% plant.tags.each do |tag| %>
           <span><%= tag.name %></span>
         <% end %>
         <%= link_to "+", new_plant_plant_tag_path(plant) %>
+      </div>
+    </div>
+    <div class="card-trip-infos">
+      <div>
+        <h2><%= plant.name %></h2>
+        <%= link_to "+", plant_path(plant), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "card-remove-link bg-dark" %>
       </div>
     </div>
   </div>
