@@ -37,7 +37,7 @@
 
 #### Router/Controller/View
 
-5. Create routes (new/create plant_tags)
+5. Create routes (new/create plant_tags) ✅
 6. Create plant_tags controller (new, create)
 7. Create new views
 8. Build the create action logic
