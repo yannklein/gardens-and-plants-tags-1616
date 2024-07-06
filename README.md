@@ -33,7 +33,7 @@
 1. Generate the model (2models) ✅
 2. Migrate ✅
 3. Model validations/associations ✅
-4. Tag seeds
+4. Tag seeds ✅
 
 #### Router/Controller/View
 

@@ -56,5 +56,14 @@ Plant.create!(
     image_url: "http://livedan330.com/wp-content/uploads/SGPinkHydrangea.jpg",
   garden: shinjuku
 )
-  
+
+puts "Plants created"
+
+puts "Create some tags"
+tag_names = ["tiny", "spiny", "fruitful", "flowering", "poisonous", "decidious" ]
+6.times do |index|
+  Tag.create!(name: tag_names[index])
+end
+puts "Tags created"
+
 puts "Seeding done!"
